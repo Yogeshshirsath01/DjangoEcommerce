@@ -1,7 +1,7 @@
 # DjangoEcommerce
  Ecommerce website with Django and HTML
 
-##Demo
+## Demo
 https://django-ecommerce-shop.herokuapp.com/
 
 ### Main features
