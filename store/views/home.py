@@ -4,7 +4,6 @@ from store.models.category import Category
 from django.views import View
 
 
-# Create your views here.
 class Index(View):
 
     def post(self , request):
@@ -48,7 +47,7 @@ def store(request):
     if categoryID:
         products = Product.get_all_products_by_categoryid(categoryID)
     else:
-        products = Product.get_all_products();
+        products = Product.get_all_products()
 
     data = {}
     data['products'] = products

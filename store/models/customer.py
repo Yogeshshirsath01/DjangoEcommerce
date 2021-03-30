@@ -1,9 +1,11 @@
-from django.db import  models
+from django.db import models
+from cloudinary.models import CloudinaryField
 from django.core.validators import MinLengthValidator
 
 class Customer(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    image = CloudinaryField(default='')
     phone = models.CharField(max_length=15)
     email = models.EmailField()
     password = models.CharField(max_length=500)
